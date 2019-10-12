@@ -1,4 +1,4 @@
-
+//let config = require("./config");
 const Discord = require("discord.js");
 const client = new Discord.Client();
 //client.website = require("./website/dashboard");
@@ -32,5 +32,5 @@ fs.readdir("./event/", (err, files) => {
   });
 });
 
-client.login("token");
+client.login("NjI5NTQ4NDU3MjQxMjE0OTg2.XaFzIA.vp6rtdJywwOyc39JJ1ZQuMb3b28");
 module.exports = client;

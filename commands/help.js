@@ -35,8 +35,9 @@ module.exports.run = async (client, message, args, prefix) => {
       )
       .addField(
         ":video_game: **Jeux →**",
-        "`crstats` , `brstats` , `fnstats` , `mcserv` , `mcskin` , `rwstats`"
+        "`crstats` , `brstats` , `fnstats` , `mcserv` , `mcskin` , `overwtach` , `rwstats`"
       )
+      .addField(":gear: **Config →**", "`prefix`")
       .addField(":tada: **Fun →**", "`8ball` , `blague` , `joke`")
       .addField(":tools: **Utilitaires →**","`calcul` , `meteo`")
       .addField(

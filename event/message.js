@@ -6,7 +6,17 @@ module.exports = async (client, message) => {
       prefixes: "*"
     };
   }
-  const prefix = prefixes[message.guild.id].prefixes;
+  let setwelcome = JSON.parse(fs.readFileSync('./welcome.json', 'utf8'));
+  if (!setwelcome[message.guild.id]) {
+    setwelcome[message.guild.id] = {
+      channel: null,
+      welcomemessage: null
+    };
+  }
+  const wc = setwelcome[message.guild.id].channel;
+ wm = setwelcome[message.guild.id].welcomemessage;
+prefix = prefixes[message.guild.id].prefixes;
+
 
   if (message.author.bot || message.channel.type === "dm") return;
   if (!message.content.startsWith(prefix)) return;

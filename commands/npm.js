@@ -9,6 +9,7 @@ module.exports.run = async (client, message, args) => {
 
   npm.getdetails(args[0].toLowerCase(), mod => {
     try {
+      console.log(mod);
       let embed = new MessageEmbed()
         .setColor("#ff0000")
         .setThumbnail(

@@ -17,6 +17,5 @@ message.channel.send(`Nouveau préfix => ${args[0]}`);
 module.exports.config = {
   name: 'prefix',
   aliases: ["p"],
-  usage: "*prefix <préfix désiré>",
-  d: "Change le préfix du bot"
+  usage: "*prefix <préfix désiré>"
 }

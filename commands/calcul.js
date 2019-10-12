@@ -1,28 +1,54 @@
 module.exports.run = (bot, message, args) => {
-  const { MessageEmbed } = require("discord.js")
-  const math = require('math-expression-evaluator');
-  const expression = args.join(" ").split("%").join("/100").split(",").join(".").split("÷").join("/").split("0/0").join("0");
+  const math = require("math-expression-evaluator");
+  const expression = args
+    .join(" ")
+    .split("%")
+    .join("/100")
+    .split(",")
+    .join(".")
+    .split("÷")
+    .join("/")
+    .split("0/0")
+    .join("0");
   const expression2 = args.join(" ");
-  if (!expression) return message.channel.send("Veuillez saisir une expression à résoudre!")
+  if (!expression)
+    return message.channel.send("Veuillez saisir une expression à résoudre!");
   try {
-
-const solved = math.eval(expression).toString();
-    const em = new MessageEmbed()
-      .setColor(0x0040ff)
-      .setTitle("•__CALCULATRICE__•")
-      .addField("EXPRESSION", `\`\`\`${expression2}\`\`\``)
-      .addField("RÉSULTAT", `\`\`\`${solved}\`\`\``)
-    message.channel.send(em)
+    const solved = math.eval(expression).toString();
+    message.channel.send({
+      embed: {
+        title: "__**CALCULATRICE**__",
+        color: 0x0040ff,
+        fields: [
+          {
+            name: "Expression",
+            value: `
+           \`\`\`yaml\n${expression2}\`\`\`          
+           `
+          },
+          {
+            name: "Résultat",
+            value: `
+           \`\`\`yaml\n${solved}\`\`\`          
+           `
+          }
+        ]
+      }
+    });
   } catch (err) {
-    const e1 = new MessageEmbed()
-      .setColor("ff0000")
-      .setDescription(`\`\`\`- ERREUR -\nImpossible de résoudre cette expréssion\nVotre calcul : ${expression2}\`\`\``)
-    return message.channel.send(e1);
+    return message.channel.send({
+      embed: {
+        color: 0xff0000,
+        description: `
+        \`\`\`diff\n- ERREUR -\nImpossible de résoudre cette expréssion\nVotre calcul: ${expression2}\`\`\`
+        `
+      }
+    });
   }
-}
+};
 module.exports.config = {
   name: "calcul",
   aliases: ["calc"],
   d: "Résolue votre expréssion",
-  usage : '*calcul <expression>'
-}
+  usage: "*calcul <expression>"
+};
