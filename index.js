@@ -1,4 +1,4 @@
-let config = require("./config");
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 //client.website = require("./website/dashboard");
