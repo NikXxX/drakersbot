@@ -1,4 +1,5 @@
 module.exports.run = async (client, message, args) => {
+  if(message.author.id !== "") return message.reply('Cette command n\'est pas fonctionnelle pour le moment')
   let user = message.mentions.users.first() || message.author;
   //let avatar = `https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}.png?size=2048`;
 let avatar = user.displayAvatarURL({
