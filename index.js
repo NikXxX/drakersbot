@@ -32,5 +32,5 @@ fs.readdir("./event/", (err, files) => {
   });
 });
 
-client.login("NjI5NTQ4NDU3MjQxMjE0OTg2.XaFQGQ._4TiJaBCp7KldTpDQxFg59STzN8");
+client.login("token");
 module.exports = client;
