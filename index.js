@@ -3,7 +3,6 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 //client.website = require("./website/dashboard");
 const fs = require("fs");
-client.config = config;
 client.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
