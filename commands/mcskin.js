@@ -1,5 +1,4 @@
-
-  module.exports.run = (client, message) => {
+module.exports.run = (client, message) => {
     //const name = args.join(" ")split("").toString().replace(/[!@#\$%\^&\*\(\)\[\]\?\:;'",\.\\\/]/gi, "")
 var args = message.content.split(" ").slice(1).toString().split("")
 if (!args) return message.reply("Veuillez saisir le nom d'un skin!");
@@ -15,7 +14,7 @@ if(args.length < 1) return message.reply("Le pseudo est trop court ou contient q
     const { MessageEmbed } = require("discord.js");
     const embed = new MessageEmbed()
     .setColor("#0040ff")
-      .setTitle(`**Télécharger le skin de ${test}**`)
+      .setTitle(`Télécharger ce skin!`)
       .setURL(`https://minotar.net/download/${test}`)
       .setImage(`https://minotar.net/body/${test}/100.png`);
     message.channel.send(embed).catch(err => message.reply("Skin Minecraft introuvable"));

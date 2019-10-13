@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "Nouveau bot discord",
   "main": "index.js",
-"scripts": {
-"start":"node index.js"
-},
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "amethyste-api": "^1.1.1",
     "api-npm": "^1.0.0",
@@ -13,11 +13,17 @@
     "discord-pagination.js": "^1.0.2",
     "discord.js": "github:discordjs/discord.js",
     "fortnite": "^4.3.2",
-    "fs": "^0.0.1",
+    "fs": "^0.0.2",
     "math-expression-evaluator": "^1.2.17",
     "moment": "^2.24.0",
     "os": "^0.1.1",
     "overwatch-api": "^0.8.0",
     "weather-js": "^2.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "cheerio": "^0.22.0",
+    "snek": "^0.4.0",
+    "snekfetch": "^4.0.4",
+    "canvas": "^2.6.1",
+    "figlet": "^1.2.4"
   }
+}

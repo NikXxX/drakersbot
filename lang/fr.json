@@ -1,17 +1,4 @@
 {
-"brstats": {
-  "err": "Joueur introuvable.",
-  "title": "__Statistiques BrawlStars__",
-  "notag": "Veuillez saisir le tag d'un joueur BrawlStars",
-  "nom": "- `Pseudo` →",
-  "niveau": "- `Niveau` →",
-  "trophée": "- `Trophées` →",
-  "victoire": "- `Victoires` →",
-  "unlocked": "- `Brawlers Débloqués` →",
-  "tag": "- `Tag` →",
-  "club": "- `Club` →",
-  "xp": "- `Total XP` →"
-},
 "fnstats": {
   "err": "Joueur introuvable.",
   "title": "__Statistiques Fortnite__",

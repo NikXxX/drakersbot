@@ -31,6 +31,6 @@ fs.readdir("./event/", (err, files) => {
     delete require.cache[require.resolve(`./event/${file}`)];
   });
 });
-
-client.login("NjI5NTQ4NDU3MjQxMjE0OTg2.XaFzIA.vp6rtdJywwOyc39JJ1ZQuMb3b28");
+  
+  
 module.exports = client;
