@@ -14,7 +14,7 @@ const type = {
 //.addField("Nom :",c.name)
 .addField(":id: ID :",c.id)
 .addField(":gear: Type :",type[c.type])
-.addField("🔢 Position :",c.position)
+.addField("🔢 Position :",c.rawPosition)
 .addField(":calendar: Créé le :",moment(c.createdAt).format("Do MMMM YYYY, LTS"))
 .addField("✋ Maniable :", c.manageable ? "- ☑" : "- :x:")
 .addField("🗑 Deletable :",c.deletable ? "- ☑" : "- :x:")

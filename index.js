@@ -31,6 +31,27 @@ fs.readdir("./event/", (err, files) => {
     delete require.cache[require.resolve(`./event/${file}`)];
   });
 });
-  
-  
+  client.on("message", msg=> {
+    
+    if(msg.content.startsWith(`<@${client.user.id}>`)) {
+      const fs = require("fs");
+  let prefixes = JSON.parse(fs.readFileSync('./prefixes.json' , 'utf8'));
+  if(!prefixes[msg.guild.id]){
+    prefixes[msg.guild.id] = {
+      prefixes: "*"
+    };
+  }
+   
+const prefix = prefixes[msg.guild.id].prefixes;
+
+      return msg.channel.send({
+        embed: {
+        color: 0x0040ff,
+        description: `Mon préfix est \`\`${prefix}\`\` sur ce serveur`
+      }})
+    } 
+  })
+//client.login("NjI5NTQ4NDU3MjQxMjE0OTg2.XaIFLg.ESYFrRMT76Q0fK7uMsQWU4qtXXs");
+//client.login("NjI5NTQ4NDU3MjQxMjE0OTg2.XaQAjg._WE87hRwFo3M3Wyv47VkdGEMJ3A");
+client.login("NjI5NTQ4NDU3MjQxMjE0OTg2.XaQiiw.KeuL0v9cxZdN4ZJe3i_bO6bku98")
 module.exports = client;

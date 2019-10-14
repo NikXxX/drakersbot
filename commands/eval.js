@@ -1,4 +1,6 @@
 module.exports.run = async (client, message, args) => {
+  const math = require("math-expression-evaluator");
+  
   function clean(text) {
     if (typeof text === "string")
       return text

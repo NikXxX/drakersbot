@@ -6,6 +6,7 @@ module.exports = async (client, message) => {
       prefixes: "*"
     };
   }
+   
 const prefix = prefixes[message.guild.id].prefixes;
 
 

@@ -28,7 +28,7 @@ module.exports.send = async (message) => {
               description: `\`\`\`${vdm[random]}\`\`\``,
                 author: {
                   name: message.author.username,
-                  icon_url: message.author.displayAvatarURL()
+                  icon_url: message.author.displayAvatarURL({ format: "png", size: 2048})
                   
                 }
                                          }

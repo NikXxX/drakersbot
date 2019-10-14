@@ -2,20 +2,27 @@ dependencies:
   amethyste-api: 1.1.1
   api-npm: 1.0.0
   axios: 0.19.0
+  base64-js: 1.3.1
+  base64-url: 2.3.2
   canvas: 2.6.1
   cheerio: 0.22.0
+  decode-encode-binary: 1.3.23
   discord-pagination.js: 1.0.2
   discord.js: github.com/discordjs/discord.js/c3228b426370a6cc5d48cb41e28bbe9f731e8473
   figlet: 1.2.4
   fortnite: 4.3.2
   fs: 0.0.2
+  hex-to-binary: 1.0.1
   math-expression-evaluator: 1.2.17
   moment: 2.24.0
+  mongoose: 5.7.4
   node-fetch: 2.6.0
   os: 0.1.1
   overwatch-api: 0.8.0
+  randomcolor: 0.5.4
   snek: 0.4.0
   snekfetch: 4.0.4
+  tims: 1.0.4
   weather-js: 2.0.0
 packages:
   /@cronvel/get-pixels/3.3.1:
@@ -132,12 +139,26 @@ packages:
     dev: false
     resolution:
       integrity: sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+  /base64-js/1.3.1:
+    dev: false
+    resolution:
+      integrity: sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
+  /base64-url/2.3.2:
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-2QpXjtjndKqPn9JKBpMTCbDGpgicfLUu+N5Y1vEfbuyqb1MN1D68C9YKCth4SjTHRvJleF3tPuxhLbH79MM0iQ==
   /bcrypt-pbkdf/1.0.2:
     dependencies:
       tweetnacl: 0.14.5
     dev: false
     resolution:
       integrity: sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
+  /bluebird/3.5.1:
+    dev: false
+    resolution:
+      integrity: sha512-MKiLiV+I1AA596t9w1sQJ8jkiSr5+ZKi0WKrYGUn6d1Fx+Ij4tIj+m2WMQSGczs5jZVxV339chE8iwk6F64wjA==
   /bluebird/3.7.0:
     dev: false
     resolution:
@@ -153,6 +174,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+  /bson/1.1.1:
+    dev: false
+    engines:
+      node: '>=0.6.19'
+    resolution:
+      integrity: sha512-jCGVYLoYMHDkOsbwJZBCqwMHyH4c+wzgI9hG7Z6SZJRXWr+x58pdIbm2i9a/jFGCkRJqRUr8eoI7lDWa0hTkxg==
   /canvas/2.6.1:
     dependencies:
       nan: 2.14.0
@@ -213,6 +240,10 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  /common-js/0.3.8:
+    dev: false
+    resolution:
+      integrity: sha1-9DKJGLS6N2+YGtM6Gx+7ZhQSbss=
   /concat-map/0.0.1:
     dev: false
     resolution:
@@ -264,6 +295,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
+  /decode-encode-binary/1.3.23:
+    dependencies:
+      common-js: 0.3.8
+      v8-compile-cache: 2.1.0
+    dev: false
+    engines:
+      node: '>=6'
+    hasBin: true
+    resolution:
+      integrity: sha512-6cxbRtocYBiVyK2MoRJBXl93rYKFxXQOgazg/D1cKkfkm8giKv0e5et1awp5gPGXRHoCtxtJIDpv4suTYABKxQ==
   /decompress-response/4.2.1:
     dependencies:
       mimic-response: 2.0.0
@@ -546,6 +587,10 @@ packages:
       node: '>= 0.4.0'
     resolution:
       integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==
+  /hex-to-binary/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-YcevAW/CK86pcE2fLpo46MfbuFQ=
   /htmlparser2/3.10.1:
     dependencies:
       domelementtype: 1.3.1
@@ -696,6 +741,10 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-MT5mvB5cwG5Di8G3SZwuXFastqI=
+  /kareem/2.3.1:
+    dev: false
+    resolution:
+      integrity: sha512-l3hLhffs9zqoDe8zjmb/mAN4B8VT3L56EUvKNqLFVs9YlFA+zx7ke1DO8STAdDyYNkeSo1nKmjuvQeI12So8Xw==
   /lazyness/1.1.1:
     dev: false
     engines:
@@ -816,6 +865,58 @@ packages:
     dev: false
     resolution:
       integrity: sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+  /mongodb/3.3.2:
+    dependencies:
+      bson: 1.1.1
+      require_optional: 1.0.1
+      safe-buffer: 5.2.0
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-fqJt3iywelk4yKu/lfwQg163Bjpo5zDKhXiohycvon4iQHbrfflSAz9AIlRE6496Pm/dQKQK5bMigdVo2s6gBg==
+  /mongoose-legacy-pluralize/1.0.2:
+    dev: false
+    peerDependencies:
+      mongoose: '*'
+    resolution:
+      integrity: sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
+  /mongoose/5.7.4:
+    dependencies:
+      bson: 1.1.1
+      kareem: 2.3.1
+      mongodb: 3.3.2
+      mongoose-legacy-pluralize: 1.0.2
+      mpath: 0.6.0
+      mquery: 3.2.2
+      ms: 2.1.2
+      regexp-clone: 1.0.0
+      safe-buffer: 5.1.2
+      sift: 7.0.1
+      sliced: 1.0.1
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-IgqQS5HIaZ8tG2cib6QllfIw2Wc/A0QVOsdKLsSqRolqJFWOjI0se3vsKXLNkbEcuJ1xziW3e/jPhBs65678Hg==
+  /mpath/0.6.0:
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-i75qh79MJ5Xo/sbhxrDrPSEG0H/mr1kcZXJ8dH6URU5jD/knFxCVqVC/gVSW7GIXL/9hHWlT9haLbCXWOll3qw==
+  /mquery/3.2.2:
+    dependencies:
+      bluebird: 3.5.1
+      debug: 3.1.0
+      regexp-clone: 1.0.0
+      safe-buffer: 5.1.2
+      sliced: 1.0.1
+    dev: false
+    engines:
+      node: '>=4.0.0'
+    resolution:
+      integrity: sha512-XB52992COp0KP230I3qloVUbkLUxJIu328HBP2t2EsxSFtf4W1HPSOBWOXf1bqxK4Xbb66lfMJ+Bpfd9/yZE1Q==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -1054,6 +1155,10 @@ packages:
       node: '>=0.6'
     resolution:
       integrity: sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  /randomcolor/0.5.4:
+    dev: false
+    resolution:
+      integrity: sha512-nYd4nmTuuwMFzHL6W+UWR5fNERGZeVauho8mrJDUSXdNDbao4rbrUwhuLgKC/j8VCS5+34Ria8CsTDuBjrIrQA==
   /rc/1.2.8:
     dependencies:
       deep-extend: 0.6.0
@@ -1086,6 +1191,10 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-jItXPLmrSR8jmTRmRWJXCnGJsfy85mB3Wd/uINMXA65yrnFo0cPClFIUWzo2najVNSl+mx7/4W8ttlLWJe99pQ==
+  /regexp-clone/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-TuAasHQNamyyJ2hb97IuBEif4qBHGjPHBS64sZwytpLEqtBQ1gPJTnOaQ6qmpET16cK14kkjbazl6+p0RRv0yw==
   /request-promise-core/1.1.2/request@2.88.0:
     dependencies:
       lodash: 4.17.15
@@ -1140,6 +1249,19 @@ packages:
       node: '>= 4'
     resolution:
       integrity: sha512-NAqBSrijGLZdM0WZNsInLJpkJokL72XYjUpnB0iwsRgxh7dB6COrHnTBNwN0E+lHDAJzu7kLAkDeY08z2/A0hg==
+  /require_optional/1.0.1:
+    dependencies:
+      resolve-from: 2.0.0
+      semver: 5.7.1
+    dev: false
+    resolution:
+      integrity: sha512-qhM/y57enGWHAe3v/NcwML6a3/vfESLe/sGM2dII+gEO0BpKRUkWZow/tyloNqJyN6kXSl3RyyM8Ll5D/sJP8g==
+  /resolve-from/2.0.0:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-lICrIOlP+h2egKgEx+oUdhGWa1c=
   /rimraf/2.7.1:
     dependencies:
       glob: 7.1.4
@@ -1184,6 +1306,10 @@ packages:
       node: '>=7.6.0'
     resolution:
       integrity: sha512-WitJqSwsjLWbCP9cciaozByx4csddLQyNoaPBqOpYFMNE6iD6FK/pM8J2yqtpauSxJUUo7Wfv5KF5w1jbVov7A==
+  /sift/7.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-oqD7PMJ+uO6jV9EQCl0LrRw1OwsiPsiFQR5AR30heR+4Dl7jBBbDLnNvWiak20tzZlSE1H7RB30SX/1j/YYT7g==
   /signal-exit/3.0.2:
     dev: false
     resolution:
@@ -1209,6 +1335,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-SoltvxayTifWOgOGD6CTh+djcp5TaOa/zdbaA38wEH1ahF2azmiLOh8CPt6ExHf0pAJAsA9OCHTS7zK24Ym4yA==
+  /sliced/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
   /snek/0.4.0:
     dependencies:
       minimist: 1.2.0
@@ -1356,6 +1486,10 @@ packages:
       node: '>=8.10.0'
     resolution:
       integrity: sha512-alrT1vDcKamNxdU8HrN25hTsHBuSWb++HVPVy98xbbUJBTw5l+NiF+ILAO56fl0XQLPOMqVUs0lhqf0B20Lucg==
+  /tims/1.0.4:
+    dev: false
+    resolution:
+      integrity: sha512-JVYNq1nsxz8gsy2rl3jlxlyh3nPPYv2cDDIB2xqP/GuF/jdi6YKFZEjRtoH11vk7R33fK/GqeHFwxx8pI3opiQ==
   /tough-cookie/2.4.3:
     dependencies:
       psl: 1.4.0
@@ -1418,6 +1552,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
+  /v8-compile-cache/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-usZBT3PW+LOjM25wbqIlZwPeJV+3OSz3M1k1Ws8snlW39dZyYL9lOGC5FgPVHfk0jKmjiDV8Z0mIbVQPiwFs7g==
   /verror/1.10.0:
     dependencies:
       assert-plus: 1.0.0
@@ -1505,18 +1643,25 @@ specifiers:
   amethyste-api: ^1.1.1
   api-npm: ^1.0.0
   axios: ^0.19.0
+  base64-js: ^1.3.1
+  base64-url: ^2.3.2
   canvas: ^2.6.1
   cheerio: ^0.22.0
+  decode-encode-binary: ^1.3.23
   discord-pagination.js: ^1.0.2
   discord.js: 'github:discordjs/discord.js'
   figlet: ^1.2.4
   fortnite: ^4.3.2
   fs: ^0.0.2
+  hex-to-binary: ^1.0.1
   math-expression-evaluator: ^1.2.17
   moment: ^2.24.0
+  mongoose: ^5.7.4
   node-fetch: ^2.6.0
   os: ^0.1.1
   overwatch-api: ^0.8.0
+  randomcolor: ^0.5.4
   snek: ^0.4.0
   snekfetch: ^4.0.4
+  tims: ^1.0.4
   weather-js: ^2.0.0

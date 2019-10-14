@@ -1,5 +1,5 @@
 module.exports.run = (client, message) => {
-    //const name = args.join(" ")split("").toString().replace(/[!@#\$%\^&\*\(\)\[\]\?\:;'",\.\\\/]/gi, "")
+    //const name = args.join(" ").split("").toString().replace(/[!@#\$%\^&\*\(\)\[\]\?\:;'",\.\\\/]/gi, "")
 var args = message.content.split(" ").slice(1).toString().split("")
 if (!args) return message.reply("Veuillez saisir le nom d'un skin!");
 var test = "" 

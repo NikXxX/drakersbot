@@ -2,7 +2,7 @@ module.exports.run = async (client, message) => {
 var args = message.content.split(" ").slice(1).toString().split("")
 if (!args) return message.reply("Veuillez saisir un texte!");
 var test = "" 
-var test2 = "abcdefghijklmnopqrstuvwxyz1234567890!?,()/-.´`':;\"<>~|[]{}#"
+var test2 = "abcdefghijklmnopqrstuvwxyz1234567890!?,()/-.´`':;\"<>~|[]{}#@%+=*_^"
 if (args.length > 14) {
       return message.reply("Votre texte est trop grand!")
     }
